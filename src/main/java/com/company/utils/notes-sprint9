@@ -1,0 +1,19 @@
+Node is a remote device that consists of a native OS and a remote WebDriver/Selenium Server (Remote WebDriver).
+
+run:
+java -jar selenium-server-standalone-3.141.59.jar -port 8989
+
+java -jar .\selenium-server-4.0.0-rc-2.jar hub
+java -jar .\selenium-server-4.0.0-rc-2.jar node --service-url http://localhost:4444/grid/register/ --port 5556
+java -jar .\selenium-server-4.0.0-rc-2.jar node --service-url http://localhost:4444/grid/register/ --port 5557
+
+POJO:
+ - dosent extend any class
+ - dosent implement interfaces
+ - does not have annotations from outside library
+
+JavaBean:
+ - no-args constructor
+ - all properties must be private
+ - should have public getters and setters
+ - must be serializable

@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+*.iml
+.idea/
+out/
+target/
+src/test/screenshots/
+resources-external/
